@@ -4,11 +4,11 @@ const path = require('path')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..index.html'))
+    res.sendFile(path.join(__dirname, '../index.html'))
 })
 
 app.get('/js', (req,res) => {
-    res.sendfile(path.join(__dirname, '..main.js'))
+    res.sendfile(path.join(__dirname, '../main.js'))
 })
 
 
