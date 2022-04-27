@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/js', (req,res) => {
-    res.sendfile(path.join(__dirname, '../public/main.js'))
+    res.sendfile(path.join(__dirname, '..main.js'))
 })
 
 
