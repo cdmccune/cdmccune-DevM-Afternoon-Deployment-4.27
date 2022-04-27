@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 
-app.use('/js', express.static(path.join(__dirname, 'public/main.js')))
+app.use('/js', express.static(path.join(__dirname, '/main.js')))
 
 
 const showImage = () => {
@@ -15,7 +15,7 @@ const showImage = () => {
     const image = document.createElement("img")
     image.src = images[0]
     document.querySelector(".pic").appendChild(image)
-    console.log("hi")
+
 }
 
 document.getElementById("pic").addEventListener('click', showImage)
